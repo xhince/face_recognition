@@ -1,0 +1,2 @@
+C:\Users\tr30106\Documents\GitHub\fr_31_12_2019\fr_31_12_2019\obj\Debug\fr_31_12_2019.njsprojAssemblyReference.cache
+C:\Users\tr30106\Documents\GitHub\fr_31_12_2019\fr_31_12_2019\bin\Microsoft.NodejsTools.WebRole.dll

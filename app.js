@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-var con = mysql.createConnection({
+/*var con = mysql.createConnection({
     host: "localhost",
     user: "frp",
     password: "fr2019",
@@ -7,7 +7,18 @@ var con = mysql.createConnection({
     database: "face_recognition",
     timezone: "utc+0",
     dateStrings: true
+});*/
+
+var con = mysql.createConnection({
+    host: "mysql-fr.mysql.database.azure.com",
+    user: "systemadmin@mysql-fr",
+    password: "yeterbeA1",
+    port: "3306",
+    database: "face_recognition",
+    timezone: "utc+0",
+    dateStrings: true
 });
+
 
 const express = require('express');
 const app = express();

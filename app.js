@@ -90,14 +90,16 @@ io.on('connection', function (socket) {
             if (flag == 1) {
                 queryFiltered += ' AND '
             }
-            queryFiltered += ('DATE_FORMAT(min_date, ' + '\"%m/%d/%Y\"' + ') >= \"' + data.start_date + '\" ');
+            //queryFiltered += ('DATE_FORMAT(min_date, ' + '\"%m/%d/%Y\"' + ') >= \"' + data.start_date + '\" ');
+            queryFiltered += ('min_date >= STR_TO_DATE(\"' + data.start_date + '\", \"%m/%d/%Y\")');
             flag = 1;
         }
         if (data.end_date) {
             if (flag == 1) {
                 queryFiltered += ' AND '
             }
-            queryFiltered += ('DATE_FORMAT(max_date, ' + '\"%m/%d/%Y\"' + ') <= \"' + data.end_date + '\" ');
+            //queryFiltered += ('DATE_FORMAT(max_date, ' + '\"%m/%d/%Y\"' + ') <= \"' + data.end_date + '\" ');
+            queryFiltered += ('max_date <= STR_TO_DATE(\"' + data.end_date + '\", \"%m/%d/%Y\")');
             flag = 1;
         }
         queryFiltered += (' ORDER BY DATE_FORMAT(min_date, \"%Y-%m-%d %T\"), DATE_FORMAT(max_date, \"%Y-%m-%d %T\"), user ASC;');

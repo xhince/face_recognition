@@ -1,0 +1,50 @@
+.jsonDataTable {
+            border: 1px solid #ddd;
+        }
+
+        #searchInsideTable {
+            width: 150px;
+            height: 34px;
+            display: inline-block;
+            margin: 0 10px 0 10px;
+        }
+
+        .queryInput {
+            width: 150px;
+            height: 34px;
+            margin-right: 15px;
+            display: inline-block;
+        }
+
+        .searchBox {
+            margin-right: 20px;
+            float: right;
+            display: inline-flex;
+        }
+        .datePicker {
+            margin-right: 20px;
+            float: left;
+            display: inline-flex;
+        }
+
+        .searchLabel {
+            margin: 4px 0 0 0;
+        }
+
+        .queryLabel {
+            width:130px;
+        }
+
+        #clearSearch {
+            line-height: 20px;
+        }
+		#particles-js{
+		  width: 100%;
+		  height: auto !important;
+		  background-color: #dddddd;
+		  background-image: url('');
+		  background-size: cover;
+		  background-position: 50% 50%;
+		  background-repeat: no-repeat;
+          position: absolute;
+		}
